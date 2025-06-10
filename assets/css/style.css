@@ -1,0 +1,130 @@
+/* 1. O fundo da página deve ter uma cor suave. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. O título (h1) deve ter uma cor diferente e estar centralizado. */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* 3. O parágrafo (p) deve ter um tamanho de fonte maior e ser justificado. */
+p.autobiografia {
+  font-size: 1.125rem;
+  text-align: justify;
+}
+
+/* 4. A lista (ul) deve ter um espaçamento maior entre os itens. */
+ul li {
+  margin-bottom: 10px;
+}
+
+/* 5. A imagem (img) deve ter bordas arredondadas e um tamanho adequado. */
+.hobby-imagem {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.pais-imagem {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* 6. A tabela(table) deve estar estilizada. */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #c9c9c9;
+}
+
+table th {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+/* 7. O link (a) deve mudar de cor quando o usuário passar o mouse sobre ele. */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+/* Estilos para o botão e a mensagem */
+.botao-interativo {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-interativo:hover {
+  background-color: #2980b9;
+}
+
+#mensagem {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+#mensagem.show {
+  display: block;
+}
